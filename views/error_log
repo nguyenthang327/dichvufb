@@ -1,0 +1,8 @@
+[07-Mar-2023 18:04:46 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected '}' in /home/santheco/dichvufb24h.com/views/view-oders.php on line 193
+[07-Mar-2023 18:04:47 Asia/Ho_Chi_Minh] PHP Parse error:  syntax error, unexpected '}' in /home/santheco/dichvufb24h.com/views/view-oders.php on line 193
+[07-Mar-2023 18:05:00 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: total_pages in /home/santheco/dichvufb24h.com/views/view-oders.php on line 115
+[07-Mar-2023 18:05:00 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: total_pages in /home/santheco/dichvufb24h.com/views/view-oders.php on line 118
+[07-Mar-2023 18:05:03 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: total_pages in /home/santheco/dichvufb24h.com/views/view-oders.php on line 115
+[07-Mar-2023 18:05:03 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: total_pages in /home/santheco/dichvufb24h.com/views/view-oders.php on line 118
+[07-Mar-2023 18:06:04 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: total_pages in /home/santheco/dichvufb24h.com/views/view-oders.php on line 119
+[07-Mar-2023 18:06:04 Asia/Ho_Chi_Minh] PHP Notice:  Undefined variable: total_pages in /home/santheco/dichvufb24h.com/views/view-oders.php on line 122

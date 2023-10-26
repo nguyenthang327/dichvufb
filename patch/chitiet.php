@@ -1,0 +1,5 @@
+- Cập nhập icon tăng comment full<br>
+- Thêm bank ACB<br>
+- Tăng tốc độ website<br>
+- Thêm mã đơn hàng và tình trạng trong tính năng hỗ trợ<br>
+- Ngày phát hành: 09/11/2022 - (Ver 1.0.1 - Respawn Dev)

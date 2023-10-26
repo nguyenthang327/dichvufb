@@ -1,0 +1,58 @@
+<?php
+// KẾT NỐI DATABASE
+// FUNCTION CURL
+function curl($data){
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => 'https://domain/api/v9',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'POST',
+  CURLOPT_POSTFIELDS =>$data,
+  CURLOPT_HTTPHEADER => array(
+    'Content-Type: application/json'
+  ),
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+return $response;
+}
+
+$api ='XXXXXXXXXXXXX'; // api lấy từ hệ thống
+$type =''; // một trong các giá trị : document,clone, buyclone, buydocument
+$soluong = 1; // Giả sử như mua 1 sản phẩm
+$masanpham = ''; // Mã sản phẩm lấy từ hệ thống 
+// LẤY DỮ LIỆU 
+$data = '{
+"token":"XXXXXXXXXX",
+"type":"clone"    
+}'
+$resuflt = curl($data);
+$dump = json_decode(resuflt);
+// DATA MẤU
+/*
+{"status":200,"data":[{"nation":"vn","name":"Gmail very 1 th\u00e1ng bao tr\u00e2u","amount":"1000","codesp":"RESPAWN-SANPHAM-SIEUCAPVODICH","conlai":0},{"nation":"vn","name":"Via clone k\u00e8m 2FA","amount":"1000","codesp":"RESPAWN-SANPHAM-SIEUCAPVODICH1","conlai":1},{"nation":"vn","name":"Hotmail very 1 th\u00e1ng si\u00eau tr\u00e2u","amount":"1000","codesp":"RESPAWN-SANPHAM-SIEUCAPVODICH2","conlai":1},{"nation":"vn","name":"Acc 1 tri\u1ec7u xu traodoisub","amount":"10000","codesp":"RESPAWN-SANPHAM-SIEUCAPVODICH3","conlai":0},{"nation":"vn","name":"Acc 1 tri\u1ec7u xu tuongtaccheo","amount":"10000","codesp":"RESPAWN-SANPHAM-SIEUCAPVODICH4","conlai":0},{"nation":"vn","name":"Via radom li\u00ean minh huy\u1ec1n tho\u1ea1i","amount":"1000","codesp":"RESPAWN-SANPHAM-SIEUCAPVODICH5","conlai":0},{"nation":"vn","name":"Via radom freefire","amount":"1000","codesp":"RESPAWN-SANPHAM-SIEUCAPVODICH6","conlai":0},{"nation":"vn","name":"Via radom li\u00ean qu\u00e2n mobile","amount":"1000","codesp":"RESPAWN-SANPHAM-SIEUCAPVODICH7","conlai":1},{"nation":"vn","name":"Gmail very 6 th\u00e1ng bao tr\u00e2u","amount":"1000","codesp":"RESPAWN-SANPHAM-SIEUCAPVODICH8","conlai":0}]}
+*/
+// status = 200 là thành công, 404 là thất bại kèm message
+// MUA  SẢN PHẨM HOẶC TÀI LIỆU 
+$data = '{
+"token":"XXXXXXXXXX",
+"type":"buyclone",
+"masanpham":"RESPAWN-SANPHAM-SIEUCAPVODICH",
+"soluong":2
+}'
+$resuflt = curl($data);
+$dump = json_decode(resuflt);
+// status = 200 là thành công, 404 là thất bại kèm message
+// DATA MẤU
+/*
+{"status":200,"name":"Gmail very 1 th\u00e1ng bao tr\u00e2u","magiaodich":"ORDER_nT5KYdGyv38BZ6gW7XHoqfijP","amount":2000,"data":[{"info":"TEST 1"},{"info":"TEST 1"}]}
+*/
+?>

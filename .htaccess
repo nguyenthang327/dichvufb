@@ -1,0 +1,67 @@
+#MÃ NGUỒN ĐƯỢC VIẾT BỞI RESPAWN DEVELOPER, NẾU BẠN MUỐN COPY CHẤT XÁM XIN HÃY TỰ TRỌNG !
+RewriteEngine on
+	Order Deny,Allow
+	Deny from 34.71.36.149
+	Allow from all
+RewriteRule ^clients/login.html$ clients/login.php [L]
+RewriteRule ^update/update.html$ accounts/update.php [L]
+RewriteRule ^clients/register.html$ clients/register.php [L]
+RewriteRule ^clients/forgot.html$ clients/forgot.php [L]
+RewriteRule ^respawn/login.html$ client/login.php [L]
+RewriteRule ^respawn/register.html$ client/register.php [L]
+RewriteRule ^respawn/napthe.html$ client/napthe.php [L]
+RewriteRule ^respawn/nappaypal.html$ client/nappaypal.php [L] #new
+RewriteRule ^respawn/forgot.html$ client/forgot.php [L]
+RewriteRule ^logout.html$ logout.php [L]
+#function
+RewriteRule ^clound/history-clone.html$ clound/history-clone.php [L]
+RewriteRule ^clound/([A-Za-z0-9-]+)$ clound/mualuon.php?target=$1 [L]
+RewriteRule ^views/([A-Za-z0-9-_]+)$ views/view-oders.php?target=$1 [L]
+RewriteRule ^clound/buyclone.html$ clound/buyclone.php [L]
+RewriteRule ^clound/home.html$ clound/index.php [L]
+RewriteRule ^clound/khoiphucsodu.html$ clound/khoiphucsodu.php [L]
+RewriteRule ^clound/api.html$ clound/api.php [L]
+RewriteRule ^clound/infomation.html$ clound/infomation.php [L]
+RewriteRule ^clound/changepass.html$ clound/infomation.php [L]
+RewriteRule ^clound/history.html$ clound/history.php [L]
+RewriteRule ^clound/bank.html$ clound/bank.php [L]
+RewriteRule ^clound/card.html$ clound/card.php [L]
+RewriteRule ^clound/paypal.html$ clound/paypal.php [L] #new
+RewriteRule ^clound/api-clone.htmll$ clound/api-clone.php [L]
+RewriteRule ^clound/history-ordes.html$ clound/history-ordes.php [L]
+RewriteRule ^services/([A-Za-z0-9-]+)$ services/index.php?act=$1 [L]
+RewriteRule ^api/v2$ clound/v2.php [L]
+RewriteRule ^api/v9$ clound/v9.php [L]
+#administrator
+RewriteRule ^administrator/sanpham.html$ administrator/sanpham.php [L]
+RewriteRule ^administrator/bank.html$ administrator/bank.php [L]
+RewriteRule ^administrator/card.html$ administrator/card.php [L]
+RewriteRule ^administrator/paypal.html$ administrator/paypal.php [L] #new
+RewriteRule ^administrator/member.html$ administrator/member.php [L]
+RewriteRule ^administrator/floder.html$ administrator/floder.php [L]
+RewriteRule ^administrator/floder-clone.html$ administrator/floder-clone.php [L]
+RewriteRule ^administrator/floder-con-clone.html$ administrator/floder-con-clone.php [L]
+RewriteRule ^administrator/flodercon.html$ administrator/flodercon.php [L]
+RewriteRule ^administrator/function.html$ administrator/function.php [L]
+RewriteRule ^administrator/server.html$ administrator/server.php [L]
+RewriteRule ^administrator/token.html$ administrator/token.php [L]
+RewriteRule ^administrator/smm.html$ administrator/smm.php [L]
+RewriteRule ^administrator/thongbao.html$ administrator/thongbao.php [L]
+RewriteRule ^administrator/hotro.html$ administrator/hotro.php [L]
+RewriteRule ^administrator/historybank.html$ administrator/historybank.php [L]
+RewriteRule ^administrator/historycard.html$ administrator/historycard.php [L]
+RewriteRule ^administrator/checkid.html$ administrator/checkid.php [L]
+RewriteRule ^administrator/congtien.html$ administrator/congtien.php [L]
+RewriteRule ^administrator/all.html$ administrator/all.php [L]
+RewriteRule ^administrator/dontay.html$ administrator/dontay.php [L]
+RewriteRule ^administrator/refund.html$ administrator/refund.php [L]
+RewriteRule ^administrator/edit.html$ administrator/edit.php [L]
+RewriteRule ^clound/error.html$ clound/error.php [L]
+RewriteRule ^clound/respond.html$ clound/respond.php [L]
+RewriteRule ^clound/create.html$ clound/create.php [L]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^dichvufb24h\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.dichvufb24h\.com$
+RewriteRule ^/?$ "https\:\/\/dichvufb24h\.com\/" [R=301,L]
+

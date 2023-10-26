@@ -1,0 +1,1 @@
+document.getElementById("alert").addEventListener("click",function(){alertify.alert("Thông báo","Có cái nịt!",function(){alertify.success("Cảm ơn bạn đã đọc thông báo !")})});

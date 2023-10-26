@@ -1,0 +1,37 @@
+<?php
+$a = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-commentnhanh.php');
+$a1 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-commentre.php');
+$a2 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-commenttiktok.php');
+$a3 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-likecomment.php');
+$a4 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-likenhanh.php');
+$a5 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-likepagenhanh.php');
+$a6 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-likepagere.php');
+$a7 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-likere.php');
+$a29 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-likepro.php');
+$a8 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-danhgiapagepro.php');
+$a8a = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-commentpro.php');
+$a8aa = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-likecamxuc.php');
+$a9 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-likeyoutube.php');
+$a10 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-matlivere.php');
+$a11 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-membergroupre.php');
+$a12 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-sharere.php');
+$a13 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-subinstagram.php');
+$a14 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-subnhanh.php');
+$a15 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-subre.php');
+$a27 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-subvip.php');
+$a28 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-timtiktokpro.php');
+$a16 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-subtiktok.php');
+$a17 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-subyoutube.php');
+$a18 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-timinstagram.php');
+$a19 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-timtiktok.php');
+$a20 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-viewstory.php');
+$a21 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-viewtiktok.php');
+$a22 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-viewvideo.php');
+$a23 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-viewyoutube.php');
+$a24 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-vipcomment.php');
+$a25 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-viplike.php');
+$a26 = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-vipmatlive.php');
+$a26a = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-sharethatpro.php');
+$a26aa = file_get_contents('https://dichvufb24h.com/multi-orders/sever-vietnam/cron-shareaopro.php');
+echo "$a<br>$a1<br>$a2<br>$a3<br>$a4<br>$a5<br>$a6<br>$a7<br>$a8<br>$a8aa<br>$a9<br>$a10<br>$a11<br>$a12<br>$a13<br>$a14<br>$a15<br>$a16<br>$a17<br>$a18<br>$a19<br>$a20<br>$a21<br>$a22<br>$a23<br>$a24<br>$a25<br>$a26<br>$a29<br>$a27<br>$a28<br>$a26a<br>$a26aa<br>$a8a";
+?>
